@@ -6,6 +6,8 @@ import config from './aws-exports';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { withAuthenticator } from 'aws-amplify-react-native';
 
+//주석처리~!!!
+
 Amplify.configure({
   ...config,
   Analytics: {
@@ -21,6 +23,8 @@ function App() {
     </View>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
