@@ -6,7 +6,7 @@ import config from './aws-exports';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { withAuthenticator } from 'aws-amplify-react-native';
 
-//주석처리~!!!
+
 
 Amplify.configure({
   ...config,
@@ -19,6 +19,7 @@ function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
+      <Text>Hello!</Text>
       <StatusBar style="auto" />
     </View>
   );
