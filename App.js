@@ -1,8 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { withAuthenticator } from 'aws-amplify-react-native';
 
-export default function App() {
+Amplify.configure({
+  ...config,
+  Analytics: {
+    disabled: true,
+  },
+});
+
+function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
@@ -19,3 +30,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default withAuthenticator(App);
