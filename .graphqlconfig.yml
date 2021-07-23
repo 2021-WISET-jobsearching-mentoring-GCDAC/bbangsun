@@ -1,0 +1,12 @@
+projects:
+  dataapi:
+    schemaPath: 'C:/BBANGSUN/aws-amplify-bbangsun/graphql/schema.json'
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
