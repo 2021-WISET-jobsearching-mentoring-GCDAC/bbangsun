@@ -13,7 +13,14 @@
     },
     "categories": {
       "auth": {
-        "awsamplifybbangsunedc88872": {}
+        "awsamplifybbangsun43c31ed4": {},
+        "userPoolGroups": {}
+      },
+      "function": {
+        "AdminQueries84cde951": {
+          "deploymentBucketName": "amplify-awsamplifybbangsun-dev-185934-deployment",
+          "s3Key": "amplify-builds/AdminQueries84cde951-783161694a61526a5533-build.zip"
+        }
       }
     }
   }
